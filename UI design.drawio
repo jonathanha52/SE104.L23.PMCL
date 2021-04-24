@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-24T04:03:14.458Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46" etag="wn0bKtI1zcTIUhbwrFzS" version="14.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-24T04:04:31.136Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46" etag="YnVeOfMLUyNxfcT6O8Rs" version="14.6.6" type="github">
   <diagram id="JSLYW5las_3jaCacX6Xa" name="Page-1">
     <mxGraphModel dx="3497" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -282,6 +282,11 @@
         <mxCell id="ujUrHDo3ct17JqZA6DmU-121" value="Phường VIP" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=17;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;" vertex="1" parent="ujUrHDo3ct17JqZA6DmU-118">
           <mxGeometry width="150" height="20" relative="1" as="geometry">
             <mxPoint y="50" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ujUrHDo3ct17JqZA6DmU-141" value="Phòng tổng thống" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=17;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;" vertex="1" parent="ujUrHDo3ct17JqZA6DmU-118">
+          <mxGeometry width="150" height="20" relative="1" as="geometry">
+            <mxPoint y="70" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ujUrHDo3ct17JqZA6DmU-125" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;strokeColor=#999999;fillColor=#ffffff;fontSize=29;" vertex="1" parent="1">
