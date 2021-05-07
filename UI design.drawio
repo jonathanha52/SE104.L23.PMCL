@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-05-07T16:41:28.699Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36 Edg/90.0.818.51" etag="-ycTf10JwlXCN1VatmJJ" version="14.6.10" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-07T16:42:29.239Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36 Edg/90.0.818.51" etag="03L-OPvxaOs8B_Pt-luX" version="14.6.10" type="github">
   <diagram id="JSLYW5las_3jaCacX6Xa" name="Page-1">
-    <mxGraphModel dx="1958" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3066" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -328,6 +328,20 @@
         </mxCell>
         <mxCell id="iy7l8Z3j97CfQDaK9TCk-15" value="Hủy" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="-230" y="380" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f7jKylhBRiIHPkalQR6E-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" edge="1" parent="1" source="iy7l8Z3j97CfQDaK9TCk-16" target="f7jKylhBRiIHPkalQR6E-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f7jKylhBRiIHPkalQR6E-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" edge="1" parent="1" source="iy7l8Z3j97CfQDaK9TCk-16" target="f7jKylhBRiIHPkalQR6E-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f7jKylhBRiIHPkalQR6E-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" edge="1" parent="1" source="iy7l8Z3j97CfQDaK9TCk-16" target="f7jKylhBRiIHPkalQR6E-42">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2550" y="250" />
+              <mxPoint x="2550" y="730" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="iy7l8Z3j97CfQDaK9TCk-16" value="Quản lý dịch vụ" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.window;align=left;verticalAlign=top;spacingLeft=8;strokeColor2=#008cff;strokeColor3=#c4c4c4;fontColor=#666666;mainText=;fontSize=17;labelBackgroundColor=none;" parent="1" vertex="1">
           <mxGeometry x="1750" y="30" width="750" height="440" as="geometry" />
