@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-05-25T03:38:39.380Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36 Edg/90.0.818.66" etag="XcTKv_yuog3khd8iX-bb" version="14.7.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-25T03:49:49.413Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36 Edg/90.0.818.66" etag="FZAzhOPtNOTJafJNC0OQ" version="14.7.0" type="github">
   <diagram id="Opc5lWXPwTlv6KtYsN9q" name="Page-1">
-    <mxGraphModel dx="1240" dy="643" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="599" dy="310" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -87,6 +87,11 @@
         </mxCell>
         <mxCell id="yodidzmNDo0TFAzRNljo-22" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SefE65so4x73vaXDRB4W-14" target="yodidzmNDo0TFAzRNljo-21">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yodidzmNDo0TFAzRNljo-26" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="yodidzmNDo0TFAzRNljo-22">
+          <mxGeometry x="-0.2683" y="-2" relative="1" as="geometry">
+            <mxPoint x="15" y="5" as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="SefE65so4x73vaXDRB4W-14" value="Check-out" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="190" y="450" width="120" height="80" as="geometry" />
