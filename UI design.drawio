@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-06-15T09:29:39.918Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48" etag="u8x2liYp6D3WqhzbpI6X" version="14.7.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-15T09:29:55.470Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48" etag="vW3LPaJtEqbV3l_GXqMB" version="14.7.8" type="github">
   <diagram id="JSLYW5las_3jaCacX6Xa" name="Page-1">
     <mxGraphModel dx="3183" dy="781" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -550,16 +550,16 @@
           <mxGeometry x="-1650" y="30" width="750" height="490" as="geometry" />
         </mxCell>
         <mxCell id="J86y39Cw3nPgJy3DNBM7-113" value="Quản lý dịch vụ" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.window;align=left;verticalAlign=top;spacingLeft=8;strokeColor2=#008cff;strokeColor3=#c4c4c4;fontColor=#666666;mainText=;fontSize=17;labelBackgroundColor=none;" parent="J86y39Cw3nPgJy3DNBM7-128" vertex="1">
-          <mxGeometry x="390" width="360" height="490" as="geometry" />
+          <mxGeometry x="390" width="360" height="440" as="geometry" />
         </mxCell>
         <mxCell id="J86y39Cw3nPgJy3DNBM7-116" value="Thông tin đặt cọc" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1" parent="J86y39Cw3nPgJy3DNBM7-128" vertex="1">
           <mxGeometry x="410" y="40" width="310" height="50" as="geometry" />
         </mxCell>
         <mxCell id="J86y39Cw3nPgJy3DNBM7-126" value="Hủy" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="J86y39Cw3nPgJy3DNBM7-128" vertex="1">
-          <mxGeometry x="580" y="420" width="140" height="40" as="geometry" />
+          <mxGeometry x="580" y="360" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="J86y39Cw3nPgJy3DNBM7-127" value="Xác nhận cọc" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="J86y39Cw3nPgJy3DNBM7-128" vertex="1">
-          <mxGeometry x="420" y="420" width="140" height="40" as="geometry" />
+          <mxGeometry x="420" y="360" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="rDmMaY0uW623CmIvIKGu-12" value="Tên khách hàng" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="J86y39Cw3nPgJy3DNBM7-128" vertex="1">
           <mxGeometry x="420" y="120.5" width="120" height="30" as="geometry" />
