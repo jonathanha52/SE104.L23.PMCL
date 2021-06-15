@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-06-15T02:41:33.758Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48" etag="h3cwSKwJYumU9Q2AJ0i0" version="14.7.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-15T03:03:44.918Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48" etag="RdBUyLbYGwlzzVF9L6LV" version="14.7.7" type="github">
   <diagram id="JSLYW5las_3jaCacX6Xa" name="Page-1">
     <mxGraphModel dx="2738" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -60,7 +60,7 @@
         <mxCell id="ujUrHDo3ct17JqZA6DmU-44" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.textBox;fontColor=#666666;align=left;fontSize=17;spacingLeft=4;spacingTop=-3;strokeColor=#666666;mainText=;fillColor=#FFFFFF;" parent="1" vertex="1">
           <mxGeometry x="-241" y="159" width="150" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ujUrHDo3ct17JqZA6DmU-45" value="Họ tên" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
+        <mxCell id="ujUrHDo3ct17JqZA6DmU-45" value="Tên khách hàng" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="-399" y="211" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="ujUrHDo3ct17JqZA6DmU-46" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.textBox;fontColor=#666666;align=left;fontSize=17;spacingLeft=4;spacingTop=-3;strokeColor=#666666;mainText=;fillColor=#FFFFFF;" parent="1" vertex="1">
@@ -561,7 +561,7 @@
         <mxCell id="J86y39Cw3nPgJy3DNBM7-127" value="Xác nhận cọc" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="J86y39Cw3nPgJy3DNBM7-128" vertex="1">
           <mxGeometry x="420" y="280" width="140" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="rDmMaY0uW623CmIvIKGu-12" value="Họ tên" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="J86y39Cw3nPgJy3DNBM7-128" vertex="1">
+        <mxCell id="rDmMaY0uW623CmIvIKGu-12" value="Tên khách hàng" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="J86y39Cw3nPgJy3DNBM7-128" vertex="1">
           <mxGeometry x="420" y="120.5" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="rDmMaY0uW623CmIvIKGu-13" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.textBox;fontColor=#666666;align=left;fontSize=17;spacingLeft=4;spacingTop=-3;strokeColor=#666666;mainText=;fillColor=#FFFFFF;" parent="J86y39Cw3nPgJy3DNBM7-128" vertex="1">
