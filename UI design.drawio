@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-06-15T13:42:58.588Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48" etag="_v2PfYaH8HNa3ALbeH_y" version="14.7.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-15T13:43:23.510Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48" etag="4uGy2mUvrM93uy9jA70V" version="14.7.8" type="github">
   <diagram id="JSLYW5las_3jaCacX6Xa" name="Page-1">
     <mxGraphModel dx="2738" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -80,7 +80,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="ujUrHDo3ct17JqZA6DmU-61" value="Số lượng giường" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="-770" y="204" width="120" height="30" as="geometry" />
+          <mxGeometry x="-770" y="210" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="ujUrHDo3ct17JqZA6DmU-63" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=5;strokeColor=#999999;fillColor=#ffffff;fontSize=29;" parent="1" vertex="1">
           <mxGeometry x="-340" y="510" width="330" height="360.94" as="geometry" />
@@ -242,7 +242,7 @@
           <mxGeometry x="103.125" y="222.75154285714285" width="41.25" height="41.25028571428572" as="geometry" />
         </mxCell>
         <mxCell id="ujUrHDo3ct17JqZA6DmU-132" value="&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;height:100%;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:85%&quot;&gt;100&lt;/td&gt;&lt;td style=&quot;width:15%&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.spinner;strokeColor=#999999;spinLayout=right;spinStyle=normal;adjStyle=triangle;fillColor=#aaddff;fontSize=17;fontColor=#666666;mainText=;html=1;overflow=fill;" parent="1" vertex="1">
-          <mxGeometry x="-640" y="204" width="150" height="36" as="geometry" />
+          <mxGeometry x="-640" y="210" width="150" height="36" as="geometry" />
         </mxCell>
         <mxCell id="iy7l8Z3j97CfQDaK9TCk-1" value="QUẢN LÝ DỊCH VỤ KHÁCH SẠN &amp;lt;TÊN KHÁCH SẠN&amp;gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="180" y="80" width="510" height="90" as="geometry" />
@@ -617,10 +617,10 @@
           <mxGeometry x="-740" y="380" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="-i7CXNjj_J_R6NrQRBQ2-1" value="Số phòng" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="-770" y="260" width="120" height="30" as="geometry" />
+          <mxGeometry x="-770" y="268" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-i7CXNjj_J_R6NrQRBQ2-2" value="101" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
-          <mxGeometry x="-640" y="260" width="150" height="30" as="geometry" />
+          <mxGeometry x="-640" y="268" width="150" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
