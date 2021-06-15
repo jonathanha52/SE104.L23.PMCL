@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-06-15T13:15:24.285Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48" etag="sNnKKyFA64rS7cBH4XMi" version="14.7.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-15T13:42:58.588Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48" etag="_v2PfYaH8HNa3ALbeH_y" version="14.7.8" type="github">
   <diagram id="JSLYW5las_3jaCacX6Xa" name="Page-1">
     <mxGraphModel dx="2738" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -67,19 +67,17 @@
           <mxGeometry x="-240" y="210" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="ujUrHDo3ct17JqZA6DmU-47" value="Ngày rời đi" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="-399" y="261" width="120" height="30" as="geometry" />
+          <mxGeometry x="-399" y="310" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ujUrHDo3ct17JqZA6DmU-117" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=29;exitX=1.017;exitY=0.608;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="ujUrHDo3ct17JqZA6DmU-48" target="ujUrHDo3ct17JqZA6DmU-63" edge="1">
+        <mxCell id="ujUrHDo3ct17JqZA6DmU-117" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=29;exitX=1.017;exitY=0.608;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" target="ujUrHDo3ct17JqZA6DmU-63" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="-10" y="279" />
               <mxPoint x="-10" y="490" />
               <mxPoint x="-163" y="490" />
             </Array>
+            <mxPoint x="-87.44999999999982" y="279.24" as="sourcePoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="ujUrHDo3ct17JqZA6DmU-48" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.textBox;fontColor=#666666;align=left;fontSize=17;spacingLeft=4;spacingTop=-3;strokeColor=#666666;mainText=;fillColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="-240" y="261" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="ujUrHDo3ct17JqZA6DmU-61" value="Số lượng giường" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="-770" y="204" width="120" height="30" as="geometry" />
@@ -592,16 +590,13 @@
           <mxGeometry x="418" y="290" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="rDmMaY0uW623CmIvIKGu-5" value="Ngày nhận phòng" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="-770" y="261" width="120" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="rDmMaY0uW623CmIvIKGu-6" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.textBox;align=left;fontSize=17;spacingLeft=4;spacingTop=-3;strokeColor=#36393d;mainText=;fillColor=#eeeeee;" parent="1" vertex="1">
-          <mxGeometry x="-639" y="261" width="149" height="30" as="geometry" />
+          <mxGeometry x="-390" y="260" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="rDmMaY0uW623CmIvIKGu-7" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.textBox;align=left;fontSize=17;spacingLeft=4;spacingTop=-3;strokeColor=#36393d;mainText=;fillColor=#eeeeee;" parent="1" vertex="1">
-          <mxGeometry x="-639" y="261" width="149" height="30" as="geometry" />
+          <mxGeometry x="-240" y="260" width="149" height="30" as="geometry" />
         </mxCell>
         <mxCell id="rDmMaY0uW623CmIvIKGu-9" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.textBox;fontColor=#666666;align=left;fontSize=17;spacingLeft=4;spacingTop=-3;strokeColor=#666666;mainText=;fillColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="-240" y="261" width="150" height="30" as="geometry" />
+          <mxGeometry x="-241" y="310" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="rDmMaY0uW623CmIvIKGu-20" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" parent="1" vertex="1">
           <mxGeometry x="1080" y="174" width="150" height="30" as="geometry" />
@@ -620,6 +615,12 @@
         </mxCell>
         <mxCell id="Fybf8yj_H5SRwN5i5jk1-1" value="Đặt cọc" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="-740" y="380" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-i7CXNjj_J_R6NrQRBQ2-1" value="Số phòng" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-770" y="260" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-i7CXNjj_J_R6NrQRBQ2-2" value="101" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="-640" y="260" width="150" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
