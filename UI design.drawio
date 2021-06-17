@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-06-17T11:58:59.951Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48" etag="BW9yDEKlNdttMEIafTLv" version="14.7.10" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-17T12:28:43.064Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48" etag="8ciNjUzqygTcUsZ-eN4x" version="14.7.10" type="github">
   <diagram id="JSLYW5las_3jaCacX6Xa" name="Page-1">
     <mxGraphModel dx="2738" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -269,10 +269,7 @@
           <mxGeometry x="1150" y="70" width="310" height="40" as="geometry" />
         </mxCell>
         <mxCell id="WSn2ks0rtRTlL89xFY6x-10" value="Tổ dịch vụ" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="940" y="220" width="120" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="WSn2ks0rtRTlL89xFY6x-12" value="Tên dịch vụ" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="940" y="268" width="120" height="30" as="geometry" />
+          <mxGeometry x="940" y="250" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="VkYrBGM2DWGojtH8OoqM-132" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="50" y="590" width="760" height="440" as="geometry" />
@@ -395,10 +392,7 @@
           <mxGeometry x="1390" y="351.5" width="180" height="31" as="geometry" />
         </mxCell>
         <mxCell id="VkYrBGM2DWGojtH8OoqM-135" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" parent="1" vertex="1">
-          <mxGeometry x="1080" y="220" width="150" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="VkYrBGM2DWGojtH8OoqM-136" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" parent="1" vertex="1">
-          <mxGeometry x="1080" y="268" width="150" height="30" as="geometry" />
+          <mxGeometry x="1080" y="250" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="VkYrBGM2DWGojtH8OoqM-137" value="Ghi chú" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="1320" y="240" width="120" height="30" as="geometry" />
@@ -539,7 +533,7 @@
           <mxGeometry x="1310" y="760" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="J86y39Cw3nPgJy3DNBM7-60" value="Tên khách hàng" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="940" y="174" width="120" height="30" as="geometry" />
+          <mxGeometry x="940" y="190" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="J86y39Cw3nPgJy3DNBM7-96" value="Hủy" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="1010" y="354" width="150" height="26" as="geometry" />
@@ -599,7 +593,7 @@
           <mxGeometry x="-241" y="310" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="rDmMaY0uW623CmIvIKGu-20" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" parent="1" vertex="1">
-          <mxGeometry x="1080" y="174" width="150" height="30" as="geometry" />
+          <mxGeometry x="1080" y="190" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="wHYKQldwxbXWLegVRE9--1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-540" y="393.5" width="10" height="13" as="geometry" />
