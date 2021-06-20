@@ -33,57 +33,52 @@ public class QLDichVuUI extends javax.swing.JFrame {
         btnTraPhong = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(700, 350));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setText("QUẢN LÝ DỊCH VỤ KHÁCH SẠN <TÊN KHÁCH SẠN>");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 434, 71));
 
+        btnDatPhong.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnDatPhong.setText("Đặt phòng");
+        btnDatPhong.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDatPhongActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnDatPhong, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 140, 63));
 
+        btnNhapDV.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnNhapDV.setText("Nhập thông tin dịch vụ");
         btnNhapDV.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNhapDVActionPerformed(evt);
             }
         });
+        getContentPane().add(btnNhapDV, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 210, -1, 63));
 
+        btnTraPhong.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnTraPhong.setText("Trả phòng");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(44, Short.MAX_VALUE)
-                .addComponent(btnDatPhong, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(63, 63, 63)
-                .addComponent(btnNhapDV, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(64, 64, 64)
-                .addComponent(btnTraPhong, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(41, 41, 41))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(110, 110, 110)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 434, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(47, 47, 47)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(41, 41, 41)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnDatPhong, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnNhapDV, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnTraPhong, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(93, Short.MAX_VALUE))
-        );
+        getContentPane().add(btnTraPhong, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 210, 140, 63));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnNhapDVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNhapDVActionPerformed
         // TODO add your handling code here:
+        this.setVisible(true);
+        DatDichVuUI_test datdv = new DatDichVuUI_test();
+        datdv.setVisible(true);
     }//GEN-LAST:event_btnNhapDVActionPerformed
+
+    private void btnDatPhongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDatPhongActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(true);
+        DatPhongUI datphongUI = new DatPhongUI();
+        datphongUI.setVisible(true);
+    }//GEN-LAST:event_btnDatPhongActionPerformed
 
     /**
      * @param args the command line arguments
