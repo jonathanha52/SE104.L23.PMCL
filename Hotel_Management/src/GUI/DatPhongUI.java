@@ -350,9 +350,9 @@ public class DatPhongUI extends javax.swing.JFrame {
                     try{
                         int result1 = bookingBll.insertBooking(booking);
                         if(result1!=0){
-                            String strUpdate = "update roominformation set roomslotused = roomslotused + "+Integer.parseInt(txtSLGiuong.getText())+""
+                            String strUpdate = "update roominformation set slotremaining = slotremaining - "+Integer.parseInt(txtSLGiuong.getText())+""
                                     + " where roomid = "+cbbSoPhong.getSelectedItem()
-                                    +" and roomtypename = 'Ở ghép'";
+                                    + " and roomtypename = 'Ở ghép'";
                             con = new DBUtils().createConn();
                             Statement stat = con.createStatement();
                             result1 = stat.executeUpdate(strUpdate);

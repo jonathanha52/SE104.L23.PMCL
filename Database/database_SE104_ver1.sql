@@ -2,19 +2,14 @@ CREATE SCHEMA `se104` ;
 use se104;
 
 create table RoomInformation (
-RoomID int not null, /*tạo roomID theo dạng số phòng 101, 102,.. 201, 202,...*/
-RoomTypeID int not null,
+RoomID int not null,
+RoomTypeName char(20) not null,
 RoomSlot int not null,
 RoomIsFull boolean not null,
-PricePerSlot double not null, /*giá tiền cho mỗi slot, nếu thuê nguyên căn thì giá bằng roomslot*priceperslot, nên để là số chẵn cho dễ tính*/
+PricePerSlot double not null,
 Primary Key (RoomID)
 );
 
-create table RoomType (
-RoomTypeID int not null auto_increment,
-RoomTypeName varchar(100) not null, /*tạo tên loại phòng: Ở ghép và Nguyên phòng*/
-Primary Key (RoomTypeID)
-);
 
 create table Booking (
 BookingID int not null,
@@ -25,7 +20,7 @@ EndDate date not null,
 Primary Key (BookingID)
 );
 create table Customer (
-CustomerID int not null, /*đây là CMND của khách hàng*/
+CustomerID int not null,
 CustomerName char(50) not null,
 Primary Key (CustomerID)
 );
@@ -85,8 +80,8 @@ ADD CONSTRAINT FK1_Booking_RoomID FOREIGN KEY (RoomID) REFERENCES RoomInformatio
 ALTER TABLE Booking
 ADD CONSTRAINT FK2_Booking_CustomerID FOREIGN KEY (CustomerID) REFERENCES Customer(CustomerID);
 
-ALTER TABLE RoomInformation
-ADD CONSTRAINT FK_RoomInformation_RoomTypeID FOREIGN KEY (RoomTypeID) REFERENCES RoomType(RoomTypeID);
+-- ALTER TABLE RoomInformation
+-- ADD CONSTRAINT FK_RoomInformation_RoomTypeID FOREIGN KEY (RoomTypeID) REFERENCES RoomType(RoomTypeID);
 
 ALTER TABLE ServiceBill
 ADD CONSTRAINT FK1_ServiceBill_RoomID FOREIGN KEY (RoomID) REFERENCES RoomInformation(RoomID);
@@ -112,25 +107,17 @@ ALTER TABLE Payment
 ADD CONSTRAINT FK3_Payment_PaymentTypeID FOREIGN KEY (PaymentTypeID) REFERENCES PaymentType(PaymentTypeID);
 
 
-/*insert vào các table: 
-roomType (2 loại là Ở ghép và Nguyên Phòng), roominfomation,
-staff, (thêm khoảng 3 staff)
-serviceDepartment (3 loại: Ăn uống, Massage, Giặt ủi), service (mỗi loại khoảng 2-3 lựa chọn),
-paymenttype (2 loại là Cash và Card)*/
 
-insert into RoomType (RoomTypeID, RoomTypeName) values (Null, 'Ở ghép');
-insert into RoomType (RoomTypeID, RoomTypeName) values (Null, 'Nguyên phòng');
-
-insert into RoomInformation (RoomID, RoomTypeID, RoomSlot, RoomIsFull, PricePerSlot) values (101, 1, 4, 0, 100000);
-insert into RoomInformation (RoomID, RoomTypeID, RoomSlot, RoomIsFull, PricePerSlot) values (102, 1, 3, 0, 100000);
-insert into RoomInformation (RoomID, RoomTypeID, RoomSlot, RoomIsFull, PricePerSlot) values (103, 1, 2, 0, 100000);
-insert into RoomInformation (RoomID, RoomTypeID, RoomSlot, RoomIsFull, PricePerSlot) values (104, 1, 1, 0, 100000);
-insert into RoomInformation (RoomID, RoomTypeID, RoomSlot, RoomIsFull, PricePerSlot) values (105, 1, 4, 0, 100000);
-insert into RoomInformation (RoomID, RoomTypeID, RoomSlot, RoomIsFull, PricePerSlot) values (106, 2, 3, 0, 200000);
-insert into RoomInformation (RoomID, RoomTypeID, RoomSlot, RoomIsFull, PricePerSlot) values (107, 2, 2, 1, 200000);
-insert into RoomInformation (RoomID, RoomTypeID, RoomSlot, RoomIsFull, PricePerSlot) values (108, 2, 1, 1, 200000);
-insert into RoomInformation (RoomID, RoomTypeID, RoomSlot, RoomIsFull, PricePerSlot) values (109, 2, 1, 0, 200000);
-insert into RoomInformation (RoomID, RoomTypeID, RoomSlot, RoomIsFull, PricePerSlot) values (110, 2, 1, 0, 200000);
+insert into RoomInformation (RoomID, RoomTypeName, RoomSlot, RoomIsFull, PricePerSlot) values (101, 'Ở ghép', 4, 0, 100000);
+insert into RoomInformation (RoomID, RoomTypeName, RoomSlot, RoomIsFull, PricePerSlot) values (102, 'Ở ghép', 3, 0, 100000);
+insert into RoomInformation (RoomID, RoomTypeName, RoomSlot, RoomIsFull, PricePerSlot) values (103, 'Nguyên phòng', 2, 0, 100000);
+insert into RoomInformation (RoomID, RoomTypeName, RoomSlot, RoomIsFull, PricePerSlot) values (104, 'Nguyên phòng', 1, 0, 100000);
+insert into RoomInformation (RoomID, RoomTypeName, RoomSlot, RoomIsFull, PricePerSlot) values (105, 'Ở ghép', 4, 0, 100000);
+insert into RoomInformation (RoomID, RoomTypeName, RoomSlot, RoomIsFull, PricePerSlot) values (106, 'Nguyên phòng', 3, 0, 200000);
+insert into RoomInformation (RoomID, RoomTypeName, RoomSlot, RoomIsFull, PricePerSlot) values (107, 'Nguyên phòng', 2, 1, 200000);
+insert into RoomInformation (RoomID, RoomTypeName, RoomSlot, RoomIsFull, PricePerSlot) values (108, 'Ở ghép', 1, 1, 200000);
+insert into RoomInformation (RoomID, RoomTypeName, RoomSlot, RoomIsFull, PricePerSlot) values (109, 'Nguyên phòng', 1, 0, 200000);
+insert into RoomInformation (RoomID, RoomTypeName, RoomSlot, RoomIsFull, PricePerSlot) values (110, 'Ở ghép', 1, 0, 200000);
 
 insert into Staff (StaffID, StaffName) values (Null, 'Lê Văn Trí');
 insert into Staff (StaffID, StaffName) values (Null, 'Huỳnh Lữ Anh Khoa');

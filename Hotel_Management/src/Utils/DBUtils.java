@@ -18,7 +18,7 @@ public class DBUtils {
     public Connection createConn(){
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:8888/qlks?userSSL=false","root","0917459476");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:8888/se104?userSSL=false","root","0917459476");
             
             if (conn== null)
                 System.out.println("Kết nối không thành công");
