@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-06-23T15:37:15.889Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.54" etag="gkCYx7nLHyZ9LbHTm3b6" version="14.8.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-23T15:49:50.804Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.54" etag="u1xyAfdw9-7sNxvEU8WX" version="14.8.0" type="github">
   <diagram id="JSLYW5las_3jaCacX6Xa" name="Page-1">
     <mxGraphModel dx="2738" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -260,16 +260,16 @@
           <mxGeometry x="-390" y="380" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="WSn2ks0rtRTlL89xFY6x-7" value="Số phòng" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="940" y="130" width="120" height="30" as="geometry" />
+          <mxGeometry x="940" y="174.75" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="WSn2ks0rtRTlL89xFY6x-8" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.textBox;fontColor=#666666;align=left;fontSize=17;spacingLeft=4;spacingTop=-3;strokeColor=#666666;mainText=;fillColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="1080" y="131" width="150" height="30" as="geometry" />
+          <mxGeometry x="1080" y="175.75" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="WSn2ks0rtRTlL89xFY6x-9" value="Đặt dịch vụ" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="1150" y="70" width="310" height="40" as="geometry" />
         </mxCell>
         <mxCell id="WSn2ks0rtRTlL89xFY6x-10" value="Tổ dịch vụ" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="940" y="250" width="120" height="30" as="geometry" />
+          <mxGeometry x="1320" y="234.75" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="VkYrBGM2DWGojtH8OoqM-132" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="50" y="590" width="760" height="440" as="geometry" />
@@ -392,19 +392,13 @@
           <mxGeometry x="1390" y="351.5" width="180" height="31" as="geometry" />
         </mxCell>
         <mxCell id="VkYrBGM2DWGojtH8OoqM-135" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" parent="1" vertex="1">
-          <mxGeometry x="1080" y="250" width="150" height="30" as="geometry" />
+          <mxGeometry x="1460" y="234.75" width="150" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="VkYrBGM2DWGojtH8OoqM-137" value="Ghi chú" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="1320" y="240" width="120" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="VkYrBGM2DWGojtH8OoqM-138" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.textBox;fontColor=#666666;align=left;fontSize=17;spacingLeft=4;spacingTop=-3;strokeColor=#666666;mainText=;fillColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="1460" y="212" width="150" height="79" as="geometry" />
-        </mxCell>
-        <mxCell id="VkYrBGM2DWGojtH8OoqM-139" value="Ngày" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="1320" y="172.5" width="120" height="30" as="geometry" />
+        <mxCell id="VkYrBGM2DWGojtH8OoqM-139" value="Ngày đặt" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="1320" y="175.75" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="VkYrBGM2DWGojtH8OoqM-140" value="&amp;nbsp;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.textBox;align=left;fontSize=17;spacingLeft=4;spacingTop=-3;mainText=;" parent="1" vertex="1">
-          <mxGeometry x="1460" y="173.5" width="150" height="30" as="geometry" />
+          <mxGeometry x="1460" y="176.75" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="J86y39Cw3nPgJy3DNBM7-2" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="900" y="590" width="750" height="440" as="geometry" />
@@ -533,7 +527,7 @@
           <mxGeometry x="1310" y="760" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="J86y39Cw3nPgJy3DNBM7-60" value="Tên khách hàng" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="940" y="190" width="120" height="30" as="geometry" />
+          <mxGeometry x="940" y="234.75" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="J86y39Cw3nPgJy3DNBM7-96" value="Hủy" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="1010" y="354" width="150" height="26" as="geometry" />
@@ -593,7 +587,7 @@
           <mxGeometry x="-241" y="310" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="rDmMaY0uW623CmIvIKGu-20" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" parent="1" vertex="1">
-          <mxGeometry x="1080" y="190" width="150" height="30" as="geometry" />
+          <mxGeometry x="1080" y="234.75" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="wHYKQldwxbXWLegVRE9--1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-540" y="393.5" width="10" height="13" as="geometry" />
