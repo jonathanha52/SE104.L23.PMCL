@@ -50,7 +50,7 @@ ServiceID int not null auto_increment,
 DepartmentName varchar(20) not null,
 ServiceName varchar(20) not null,
 Unit char(7) not null,
-UnitPrice decimal(19,4) not null,
+UnitPrice double not null,
 Primary Key(ServiceID)
 );
 -- create table ServiceDepartment(
@@ -63,7 +63,7 @@ DepositID int not null,
 BookingID int not null,
 CustomerID int not null,
 DepositDate date not null,
-DepositAmount decimal(15,4) not null,
+DepositAmount double not null,
 Explanation varchar(100) not null,
 Primary Key (DepositID)
 );
