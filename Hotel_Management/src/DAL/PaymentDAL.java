@@ -36,9 +36,8 @@ public class PaymentDAL {
             while(rs.next()){
                 PaymentDTO payment = new PaymentDTO();
                 payment.setPaymentID(rs.getInt("paymentid"));
-                payment.setServiceBillID(rs.getInt("servicebillid"));
                 payment.setBookingID(rs.getInt("bookingid"));
-                payment.setPaymentTypeID(rs.getInt("paymenttypeid"));
+                payment.setPaymentTypeName(rs.getString("paymenttypename"));
                 payment.setPaymentDate(rs.getDate("paymentdate"));
                 payment.setPaymentStatus(rs.getBoolean("paymentstatus"));
                 
@@ -70,13 +69,13 @@ public class PaymentDAL {
             conn = dbu.createConn();
             pres = conn.prepareStatement(sqlInsert);
             pres.setInt(1, payment.getPaymentID());
-            pres.setInt(2, payment.getServiceBillID());
-            pres.setInt(3, payment.getBookingID());
-            pres.setInt(4, payment.getPaymentTypeID());
+            pres.setInt(2, payment.getBookingID());
+            pres.setString(3, payment.getPaymentTypeName());
             java.util.Date utilDate = payment.getPaymentDate();
             java.sql.Date sqlDate = new java.sql.Date(utilDate.getTime());
-            pres.setDate(5, sqlDate);
-            pres.setBoolean(6, payment.isPaymentStatus());
+            pres.setDate(4, sqlDate);
+            pres.setBoolean(5, payment.isPaymentStatus());
+            pres.setDouble(6, payment.getAmount());
             
             result = pres.executeUpdate();
         }catch(Exception e){

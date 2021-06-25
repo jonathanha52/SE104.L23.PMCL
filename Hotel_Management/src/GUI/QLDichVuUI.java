@@ -33,7 +33,6 @@ public class QLDichVuUI extends javax.swing.JFrame {
         btnTraPhong = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(700, 350));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -60,6 +59,11 @@ public class QLDichVuUI extends javax.swing.JFrame {
 
         btnTraPhong.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnTraPhong.setText("Trả phòng");
+        btnTraPhong.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTraPhongActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnTraPhong, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 210, 140, 63));
 
         pack();
@@ -69,7 +73,7 @@ public class QLDichVuUI extends javax.swing.JFrame {
     private void btnNhapDVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNhapDVActionPerformed
         // TODO add your handling code here:
         this.setVisible(true);
-        DatDichVuUI_test datdv = new DatDichVuUI_test();
+        DatDichVuUI datdv = new DatDichVuUI();
         datdv.setVisible(true);
     }//GEN-LAST:event_btnNhapDVActionPerformed
 
@@ -79,6 +83,11 @@ public class QLDichVuUI extends javax.swing.JFrame {
         DatPhongUI datphongUI = new DatPhongUI();
         datphongUI.setVisible(true);
     }//GEN-LAST:event_btnDatPhongActionPerformed
+
+    private void btnTraPhongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTraPhongActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_btnTraPhongActionPerformed
 
     /**
      * @param args the command line arguments

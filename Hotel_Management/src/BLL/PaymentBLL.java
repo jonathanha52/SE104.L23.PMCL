@@ -5,6 +5,7 @@
  */
 package BLL;
 
+import DAL.PaymentDAL;
 import DTO.PaymentDTO;
 import java.util.ArrayList;
 
@@ -13,7 +14,7 @@ import java.util.ArrayList;
  * @author huynh
  */
 public class PaymentBLL {
-    PaymentBLL paymentDAL = new PaymentBLL();
+    PaymentDAL paymentDAL = new PaymentDAL();
     
     public ArrayList<PaymentDTO> getAllPayment(){
         return paymentDAL.getAllPayment();

@@ -12,9 +12,27 @@ import java.util.Date;
  * @author huynh
  */
 public class PaymentDTO {
-    private int paymentID, bookingID, serviceBillID, paymentTypeID;
+    private int paymentID, bookingID;
+    private double amount;
+    private String paymentTypeName;
     private java.util.Date paymentDate;
     private boolean paymentStatus;
+
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public void setPaymentTypeName(String paymentTypeName) {
+        this.paymentTypeName = paymentTypeName;
+    }
+
+    public String getPaymentTypeName() {
+        return paymentTypeName;
+    }
 
     public void setPaymentStatus(boolean paymentStatus) {
         this.paymentStatus = paymentStatus;
@@ -24,28 +42,12 @@ public class PaymentDTO {
         return paymentStatus;
     }
 
-    public void setPaymentTypeID(int paymentTypeID) {
-        this.paymentTypeID = paymentTypeID;
-    }
-
-    public int getPaymentTypeID() {
-        return paymentTypeID;
-    }
-
     public void setBookingID(int bookingID) {
         this.bookingID = bookingID;
     }
 
-    public void setServiceBillID(int serviceBillID) {
-        this.serviceBillID = serviceBillID;
-    }
-
     public int getBookingID() {
         return bookingID;
-    }
-
-    public int getServiceBillID() {
-        return serviceBillID;
     }
 
     public void setPaymentID(int paymentID) {

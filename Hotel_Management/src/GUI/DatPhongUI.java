@@ -53,7 +53,7 @@ public class DatPhongUI extends javax.swing.JFrame {
         Connection con = new DBUtils().createConn();
         try{
             String strSQL = "select * from roominformation where roomtypename = '"+cbbDangThue.getSelectedItem()+"'"
-                    + "and slotremaining >= "+ Integer.parseInt(txtSLGiuong.getText())
+                    + " and slotremaining >= "+ Integer.parseInt(txtSLGiuong.getText())
                     + " and roomisfull is not true";
             Statement stat = con.createStatement();
             ResultSet rs = stat.executeQuery(strSQL);
@@ -78,7 +78,7 @@ public class DatPhongUI extends javax.swing.JFrame {
             }
             else{
                 int bookingIDHienTai = rs.getInt("bookingid");
-                bookingID = bookingIDHienTai++;
+                bookingID = bookingIDHienTai+1;
             }
             con.close();
         }
@@ -101,7 +101,7 @@ public class DatPhongUI extends javax.swing.JFrame {
             }
             else{
                 int depositIDHienTai = rs.getInt("depositid");
-                depositID = depositIDHienTai++;
+                depositID = depositIDHienTai+1;
             }
             con.close();
         }
@@ -257,6 +257,8 @@ public class DatPhongUI extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel10.setText("CMND");
         paneDatCoc.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(41, 132, -1, 25));
+
+        txtCMNDDC.setEditable(false);
         paneDatCoc.add(txtCMNDDC, new org.netbeans.lib.awtextra.AbsoluteConstraints(197, 127, 160, 30));
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -279,6 +281,8 @@ public class DatPhongUI extends javax.swing.JFrame {
         jLabel15.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel15.setText("Số tiền");
         paneDatCoc.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(41, 223, -1, 30));
+
+        txtTenKHDC.setEditable(false);
         paneDatCoc.add(txtTenKHDC, new org.netbeans.lib.awtextra.AbsoluteConstraints(197, 79, 160, 30));
         paneDatCoc.add(txtSoTien, new org.netbeans.lib.awtextra.AbsoluteConstraints(197, 225, 160, 30));
 
@@ -324,8 +328,9 @@ public class DatPhongUI extends javax.swing.JFrame {
     private void btnDatPhongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDatPhongActionPerformed
         // TODO add your handling code here:
         if(txtCMND.getText().equals("")||txtTenKH.getText().equals("")||Integer.parseInt(txtSLGiuong.getText())<1||
-                dateNgayDi.getDate().equals("")||dateNgayNhanPhong.getDate().equals("")){
-            JOptionPane.showMessageDialog(null, "Vui lòng nhập đủ thông tin đặt phòng", "Lỗi", JOptionPane.INFORMATION_MESSAGE);
+                dateNgayDi.getDate().equals("")||dateNgayNhanPhong.getDate().equals("")||
+                dateNgayDi.getDate().before(dateNgayNhanPhong.getDate())){
+            JOptionPane.showMessageDialog(null, "Vui lòng nhập đúng thông tin đặt phòng", "Lỗi", JOptionPane.INFORMATION_MESSAGE);
         }
         else{
             Connection con = new DBUtils().createConn();
@@ -355,6 +360,13 @@ public class DatPhongUI extends javax.swing.JFrame {
                                     + " and roomtypename = 'Ở ghép'";
                             con = new DBUtils().createConn();
                             Statement stat = con.createStatement();
+                            result1 = stat.executeUpdate(strUpdate);
+                            
+                            strUpdate = "update roominformation set roomisfull = true "
+                                    + "where slotremaining = 0 "
+                                    + "or roomtypename = 'Nguyên phòng'";
+                            con = new DBUtils().createConn();
+                            stat = con.createStatement();
                             result1 = stat.executeUpdate(strUpdate);
                             JOptionPane.showMessageDialog(null, "Book thành công, vui lòng ghi nhận đặt cọc","Thông báo",JOptionPane.INFORMATION_MESSAGE);
                             btnDatCoc.setEnabled(true);
