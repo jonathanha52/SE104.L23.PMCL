@@ -1,14 +1,14 @@
-<mxfile host="app.diagrams.net" modified="2021-06-26T16:20:00.230Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.59 Safari/537.36 Edg/92.0.902.22" etag="OeQEoCoboXY_TEMsCq9A" version="14.8.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-06-27T05:05:48.198Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.59" etag="7dbhcBXe_XnRzWKtGQZ6" version="14.8.1" type="github" pages="4">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Check out">
-    <mxGraphModel dx="1632" dy="-2832" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2196" dy="-2469" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="QfCozxqc8HdXznxPsznA-1" value="Alternative" style="shape=umlFrame;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;width=140;height=30;" parent="1" vertex="1">
-          <mxGeometry x="-748" y="4073" width="988" height="556" as="geometry" />
+          <mxGeometry x="-748" y="4073" width="988" height="416" as="geometry" />
         </mxCell>
         <mxCell id="QfCozxqc8HdXznxPsznA-3" value="" style="line;strokeWidth=1;dashed=1;labelPosition=center;verticalLabelPosition=bottom;align=left;verticalAlign=top;spacingLeft=20;spacingTop=15;" parent="QfCozxqc8HdXznxPsznA-1" vertex="1">
-          <mxGeometry x="2.9951154529307282" y="278.0048148148148" width="987.9999999999998" height="22.239999999999995" as="geometry" />
+          <mxGeometry x="-0.004884547069271772" y="297.0036024513722" width="987.9999999999998" height="16.639999999999997" as="geometry" />
         </mxCell>
         <mxCell id="yshK8mTnH11i5TKMXhNw-16" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="XMhn7jzWNxRffur_yB8t-258" target="XMhn7jzWNxRffur_yB8t-262" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -329,7 +329,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="N-oLu8P1E_uynj7DAGSJ" name="Booking">
-    <mxGraphModel dx="1958" dy="685" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1792" dy="582" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="axBO4yZhNv5CIfhtuRog-0" />
         <mxCell id="axBO4yZhNv5CIfhtuRog-1" parent="axBO4yZhNv5CIfhtuRog-0" />
@@ -635,7 +635,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="-ddBjaohlLQsPHDZfnAF" name="Record service usage">
-    <mxGraphModel dx="1632" dy="-1732" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1792" dy="-1618" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="rCvwlCOmXgP3HcUrArsY-0" />
         <mxCell id="rCvwlCOmXgP3HcUrArsY-1" parent="rCvwlCOmXgP3HcUrArsY-0" />
@@ -779,7 +779,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="DC4zm3aPtCig3Szw0-ID" name="Payment">
-    <mxGraphModel dx="1967" dy="-4831" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1792" dy="-4918" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="_8gl-qrCo0sDhjRBuDNl-0" />
         <mxCell id="_8gl-qrCo0sDhjRBuDNl-1" parent="_8gl-qrCo0sDhjRBuDNl-0" />
