@@ -20,8 +20,12 @@ public class DepositBLL {
         return depositDAL.getAllDeposit();
     }
     
-    public int insertDeposith(DepositDTO deposit){
+    public int insertDeposit(DepositDTO deposit){
         int result = depositDAL.insertDeposit(deposit);
+        return result;
+    }
+    public int deleteDeposit(DepositDTO deposit){
+        int result = depositDAL.deleteDeposit(deposit);
         return result;
     }
 }

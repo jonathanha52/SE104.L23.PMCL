@@ -12,8 +12,16 @@ import java.util.Date;
  * @author huynh
  */
 public class BookingDTO {
-    private int bookingID, roomID, customerID;
+    private int bookingID, roomID, customerID, slot;
     java.util.Date startDate, endDate;
+
+    public void setSlot(int slot) {
+        this.slot = slot;
+    }
+
+    public int getSlot() {
+        return slot;
+    }
     
     public BookingDTO(){}
     public BookingDTO(int bookingid, int roomid, int customerid, Date startDate, Date endDate){

@@ -63,7 +63,7 @@ public class BookingDAL {
     
     public int insertBooking(BookingDTO booking){
         int result = 0;
-        String sqlInsert = "insert into booking values (?,?,?,?,?)";
+        String sqlInsert = "insert into booking values (?,?,?,?,?,?)";
         try{
             dbu = new DBUtils();
             conn = dbu.createConn();
@@ -77,8 +77,43 @@ public class BookingDAL {
             utilDate = booking.getEndDate();
             sqlDate = new java.sql.Date(utilDate.getTime());
             pres.setDate(5, sqlDate);
-            
+            pres.setInt(6, booking.getSlot());
             result = pres.executeUpdate();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        finally{
+            try{
+                conn.close();
+                pres.close();
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+        }
+        return result;
+    }
+    public int deleteBooking(BookingDTO booking){
+        int result = 0;
+        String sqlDelete = "delete from booking where bookingid =?";
+        try{
+            dbu = new DBUtils();
+            conn = dbu.createConn();
+            pres = conn.prepareStatement(sqlDelete);
+            pres.setInt(1, booking.getBookingID());
+            result = pres.executeUpdate();
+            String sqlUpdate1 = "update roominformation set slotremaining = slotremaining+?,"
+                    + " roomisfull = 0"
+                    + " where roomid =? and roomtypename = 'Ở ghép'";
+            pres = conn.prepareStatement(sqlUpdate1);
+            pres.setInt(1, booking.getSlot());
+            pres.setInt(2, booking.getRoomID());
+            pres.executeUpdate();
+            
+            String sqlUpdate2 = "update roominformation set roomisfull = 0"
+                    + " where roomid =? and roomtypename = 'Nguyên phòng'";
+            pres = conn.prepareStatement(sqlUpdate2);
+            pres.setInt(1, booking.getRoomID());
+            pres.executeUpdate();
         }catch(Exception e){
             e.printStackTrace();
         }

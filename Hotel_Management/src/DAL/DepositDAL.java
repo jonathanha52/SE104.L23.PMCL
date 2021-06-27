@@ -91,4 +91,26 @@ public class DepositDAL {
         }
         return result;
     }
+    public int deleteDeposit(DepositDTO deposit){
+        int result = 0;
+        String sqlDelete = "delete from deposit where deposit.bookingid = ?";
+        try{
+            dbu = new DBUtils();
+            conn = dbu.createConn();
+            pres = conn.prepareStatement(sqlDelete);
+            pres.setInt(1, deposit.getBookingID());
+            result = pres.executeUpdate();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        finally{
+            try{
+                conn.close();
+                pres.close();
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+        }
+        return result;
+    }
 }

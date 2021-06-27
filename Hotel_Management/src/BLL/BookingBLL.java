@@ -24,4 +24,8 @@ public class BookingBLL {
         int result = bookingDAL.insertBooking(booking);
         return result;
     }
+    public int deleteBooking(BookingDTO booking){
+        int result = bookingDAL.deleteBooking(booking);
+        return result;
+    }
 }

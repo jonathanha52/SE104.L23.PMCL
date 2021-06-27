@@ -12,8 +12,16 @@ import java.util.Date;
  * @author huynh
  */
 public class ServiceBillDTO {
-    private int serviceBillID, roomID, staffID, serviceID, quantity;
+    private int serviceBillID, bookingID, staffID, serviceID, quantity;
     private java.util.Date serviceDate;
+
+    public void setBookingID(int bookingID) {
+        this.bookingID = bookingID;
+    }
+
+    public int getBookingID() {
+        return bookingID;
+    }
 
     public void setServiceID(int serviceID) {
         this.serviceID = serviceID;
@@ -43,20 +51,12 @@ public class ServiceBillDTO {
         this.serviceBillID = serviceBillID;
     }
 
-    public void setRoomID(int roomID) {
-        this.roomID = roomID;
-    }
-
     public void setServiceDate(Date serviceDate) {
         this.serviceDate = serviceDate;
     }
 
     public int getServiceBillID() {
         return serviceBillID;
-    }
-
-    public int getRoomID() {
-        return roomID;
     }
 
     public Date getServiceDate() {

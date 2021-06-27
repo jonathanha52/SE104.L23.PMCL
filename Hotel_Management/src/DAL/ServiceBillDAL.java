@@ -36,7 +36,7 @@ public class ServiceBillDAL {
             while(rs.next()){
                 ServiceBillDTO serviceBill = new ServiceBillDTO();
                 serviceBill.setServiceBillID(rs.getInt("servicebillid"));
-                serviceBill.setRoomID(rs.getInt("roomid"));
+                serviceBill.setBookingID(rs.getInt("roomid"));
                 serviceBill.setStaffID(rs.getInt("staffid"));
                 serviceBill.setServiceDate(rs.getDate("servicedate"));
                 serviceBill.setServiceID(rs.getInt("serviceid"));
@@ -70,7 +70,7 @@ public class ServiceBillDAL {
             conn = dbu.createConn();
             pres = conn.prepareStatement(sqlInsert);
             pres.setInt(1, serviceBill.getServiceBillID());
-            pres.setInt(2, serviceBill.getRoomID());
+            pres.setInt(2, serviceBill.getBookingID());
             pres.setInt(3, serviceBill.getStaffID());
             pres.setInt(4, serviceBill.getServiceID());
             java.util.Date utilDate = serviceBill.getServiceDate();
@@ -78,6 +78,27 @@ public class ServiceBillDAL {
             pres.setDate(5, sqlDate);
             pres.setInt(6, serviceBill.getQuantity());
             
+            result = pres.executeUpdate();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        finally{
+            try{
+                conn.close();
+                pres.close();
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+        }
+        return result;
+    }
+    public int deleteServiceBill(ServiceBillDTO serviceBill){
+        int result = 0;
+        String sqlDelete = "delete from servicebill where bookingid = "+serviceBill.getBookingID();
+        try{
+            dbu = new DBUtils();
+            conn = dbu.createConn();
+            pres = conn.prepareStatement(sqlDelete);
             result = pres.executeUpdate();
         }catch(Exception e){
             e.printStackTrace();

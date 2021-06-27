@@ -14,8 +14,8 @@ import java.util.Date;
 public class DepositDTO {
     private int depositID, bookingID, customerID;
     private java.util.Date depositDate;
-    String  explanation;
-
+    private String  explanation;
+    private double depositAmount;
     
     public void setCustomerID(int customerID) {
         this.customerID = customerID;
@@ -24,9 +24,6 @@ public class DepositDTO {
     public int getCustomerID() {
         return customerID;
     }
-
-    
-    private double depositAmount;
     
     public DepositDTO(){}
 

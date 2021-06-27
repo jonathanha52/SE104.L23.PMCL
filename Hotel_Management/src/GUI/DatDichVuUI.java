@@ -538,16 +538,21 @@ public class DatDichVuUI extends javax.swing.JFrame {
         try{
             for(int i=0; i<tblCTDV.getRowCount();i++){
                 Connection con = new DBUtils().createConn();
-                String strSQL = "select serviceID from service where servicename = '"+tblCTDV.getValueAt(i, 0)+"'";
+                String strSQL = "select serviceID, bookingid, customer.customerid from service, booking, customer"
+                        + " where servicename = '"+tblCTDV.getValueAt(i, 0)+"'"
+                        + " and customername = '"+cbbTenKH.getSelectedItem().toString()+"'"
+                        + " and roomid = "+txtSoPhong.getText()
+                        + " and booking.customerid = customer.customerid";
                 Statement stat = con.createStatement();
                 ResultSet rs = stat.executeQuery(strSQL);
                 
                 
+                
                 ServiceBillDTO serviceBill = new ServiceBillDTO();
-                serviceBill.setServiceBillID(layServiceBillID());
-                serviceBill.setRoomID(Integer.parseInt(txtSoPhong.getText()));
-                serviceBill.setStaffID(layStaffID());
                 if(rs.next()){
+                    serviceBill.setServiceBillID(layServiceBillID());
+                    serviceBill.setBookingID(rs.getInt("bookingid"));
+                    serviceBill.setStaffID(layStaffID());
                     serviceBill.setServiceID(rs.getInt("serviceid"));
                 }
                 java.util.Date utilDate = new java.util.Date(dateNgayDat.getDate().getTime());
@@ -555,7 +560,7 @@ public class DatDichVuUI extends javax.swing.JFrame {
                 serviceBill.setServiceDate(sqlDate);
                 serviceBill.setQuantity(Integer.parseInt(tblCTDV.getValueAt(i, 1).toString()));
                 ServiceBillBLL serviceBillBll = new ServiceBillBLL();
-                int result = serviceBillBll.insertServiceBillh(serviceBill);
+                int result = serviceBillBll.insertServiceBill(serviceBill);
                 if(result==0){
                     JOptionPane.showMessageDialog(null, "Đặt dịch vụ không thành công", "Thông báo", JOptionPane.INFORMATION_MESSAGE);
                     break;

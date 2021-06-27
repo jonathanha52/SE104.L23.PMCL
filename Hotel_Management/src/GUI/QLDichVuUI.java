@@ -33,6 +33,7 @@ public class QLDichVuUI extends javax.swing.JFrame {
         btnTraPhong = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(700, 350));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -86,7 +87,9 @@ public class QLDichVuUI extends javax.swing.JFrame {
 
     private void btnTraPhongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTraPhongActionPerformed
         // TODO add your handling code here:
-        
+        this.setVisible(true);
+        TraPhongUI traphongUI = new TraPhongUI();
+        traphongUI.setVisible(true);
     }//GEN-LAST:event_btnTraPhongActionPerformed
 
     /**

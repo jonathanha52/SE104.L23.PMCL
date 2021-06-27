@@ -5,8 +5,8 @@
  */
 package GUI;
 
-import BLL.PaymentBLL;
-import DTO.PaymentDTO;
+import BLL.*;
+import DTO.*;
 import Utils.DBUtils;
 import java.util.ArrayList;
 import javax.swing.DefaultComboBoxModel;
@@ -236,6 +236,8 @@ public class TraPhongUI extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel7.setText("Mã đặt phòng");
 
+        txtMaDatPhong.setEditable(false);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -344,12 +346,33 @@ public class TraPhongUI extends javax.swing.JFrame {
                 payment.setPaymentStatus(true);
                 payment.setAmount(Double.parseDouble(txtTongTienTT.getText()));
                 PaymentBLL paymentBll = new PaymentBLL();
-                int result = paymentBll.insertPayment(payment);
-                if(result!=0){
-                    JOptionPane.showMessageDialog(null, "Thanh toán thành công", "Thông báo", JOptionPane.INFORMATION_MESSAGE);
-                    this.ckbDaThanhToan.setSelected(true);
-                    this.ckbDaThanhToan.setEnabled(false);
+                int ret = JOptionPane.showConfirmDialog(null, "Xác nhận thanh toán?", "Thanh toán", JOptionPane.YES_NO_OPTION);
+                if(ret == JOptionPane.YES_OPTION){
+
+                    ServiceBillDTO serviceBill = new ServiceBillDTO();
+                    serviceBill.setBookingID(Integer.parseInt(txtMaDatPhong.getText()));
+                    ServiceBillBLL serviceBillBll = new ServiceBillBLL();
+                    serviceBillBll.deleteServiceBill(serviceBill);
+                    
+                    
+                    DepositDTO deposit = new DepositDTO();
+                    deposit.setBookingID(Integer.parseInt(txtMaDatPhong.getText()));
+                    DepositBLL depositBll = new DepositBLL();
+                    depositBll.deleteDeposit(deposit);
+                    
+                    BookingDTO booking = new BookingDTO();
+                    booking.setBookingID(Integer.parseInt(txtMaDatPhong.getText()));
+                    BookingBLL bookingBll = new BookingBLL();
+                    bookingBll.deleteBooking(booking);
+                    
+                    int result = paymentBll.insertPayment(payment);
+                    if(result!=0){
+                        JOptionPane.showMessageDialog(null, "Thanh toán thành công", "Thông báo", JOptionPane.INFORMATION_MESSAGE);
+                        this.ckbDaThanhToan.setSelected(true);
+                        this.ckbDaThanhToan.setEnabled(false);
+                    }
                 }
+                
             }catch(Exception e){
                 e.printStackTrace();
             }

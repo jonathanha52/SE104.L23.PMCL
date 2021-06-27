@@ -351,6 +351,7 @@ public class DatPhongUI extends javax.swing.JFrame {
                     utilDate = dateNgayNhanPhong.getDate();
                     sqlDate = new java.sql.Date(utilDate.getTime());
                     booking.setEndDate(sqlDate);
+                    booking.setSlot(Integer.parseInt(txtSLGiuong.getText()));
                     BookingBLL bookingBll = new BookingBLL();
                     try{
                         int result1 = bookingBll.insertBooking(booking);
@@ -363,8 +364,9 @@ public class DatPhongUI extends javax.swing.JFrame {
                             result1 = stat.executeUpdate(strUpdate);
                             
                             strUpdate = "update roominformation set roomisfull = true "
-                                    + "where slotremaining = 0 "
-                                    + "or roomtypename = 'Nguyên phòng'";
+                                    + "where roomid = "+cbbSoPhong.getSelectedItem()
+                                    + " and roomtypename = 'Nguyên phòng'"
+                                    + " or slotremaining = 0";
                             con = new DBUtils().createConn();
                             stat = con.createStatement();
                             result1 = stat.executeUpdate(strUpdate);
@@ -438,7 +440,7 @@ public class DatPhongUI extends javax.swing.JFrame {
 
                     DepositBLL depositBll = new DepositBLL();
                     try{
-                        int result = depositBll.insertDeposith(deposit);
+                        int result = depositBll.insertDeposit(deposit);
                         if(result!=0){
                             JOptionPane.showMessageDialog(null, "Thêm thông tin đặt cọc thành công","Thông báo",JOptionPane.INFORMATION_MESSAGE);
                             tabPanel.setSelectedIndex(0);

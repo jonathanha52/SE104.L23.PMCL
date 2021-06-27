@@ -20,8 +20,13 @@ public class ServiceBillBLL {
         return serviceBillDAL.getAllServiceBill();
     }
     
-    public int insertServiceBillh(ServiceBillDTO serviceBill){
+    public int insertServiceBill(ServiceBillDTO serviceBill){
         int result = serviceBillDAL.insertServiceBill(serviceBill);
+        return result;
+    }
+    
+    public int deleteServiceBill(ServiceBillDTO serviceBill){
+        int result = serviceBillDAL.deleteServiceBill(serviceBill);
         return result;
     }
 }
