@@ -231,11 +231,6 @@ public class DatDichVuUI extends javax.swing.JFrame {
                         .addGap(290, 290, 290)
                         .addComponent(jLabel1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(120, 120, 120)
-                        .addComponent(btnHuy, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(70, 70, 70)
-                        .addComponent(btnChiTietDV, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(22, 22, 22)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel3)
@@ -255,7 +250,12 @@ public class DatDichVuUI extends javax.swing.JFrame {
                                 .addGap(46, 46, 46)
                                 .addComponent(jLabel4)
                                 .addGap(18, 18, 18)
-                                .addComponent(cbbToDV, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(cbbToDV, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(112, 112, 112)
+                        .addComponent(btnChiTietDV, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(101, 101, 101)
+                        .addComponent(btnHuy, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(40, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -279,9 +279,9 @@ public class DatDichVuUI extends javax.swing.JFrame {
                     .addComponent(cbbTenKH, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
                 .addGap(98, 98, 98)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnHuy, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnChiTietDV, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnChiTietDV, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnHuy, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
         tabPanel.addTab("Đặt dịch vụ", jPanel1);
@@ -365,7 +365,6 @@ public class DatDichVuUI extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 695, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
@@ -406,6 +405,7 @@ public class DatDichVuUI extends javax.swing.JFrame {
                         .addGap(46, 46, 46)
                         .addComponent(btnXacNhan, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(41, 41, 41))
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 695, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -462,20 +462,38 @@ public class DatDichVuUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnChiTietDVActionPerformed
 
     public ArrayList<String> arrTenKH = new ArrayList<String>();
+    public ArrayList<Integer> arrPaidBookingid = new ArrayList<Integer>();
     private void txtSoPhongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSoPhongActionPerformed
         // TODO add your handling code here:
-        String strSQL = "select booking.customerid, customername from booking, customer where "
+        cbbTenKH.removeAllItems();
+        arrTenKH.removeAll(arrTenKH);
+        String strSQL = "select bookingid, booking.customerid, customername from booking, customer where "
                 + "roomid = "+txtSoPhong.getText()+ " and booking.customerid = customer.customerid";
         Connection con = new DBUtils().createConn();
         try{
             Statement stat = con.createStatement();
             ResultSet rs = stat.executeQuery(strSQL);
-            while(rs.next()){
-                arrTenKH.add(rs.getString("customername"));
+            
+            String strSQL1 = "select * from payment where paymentstatus = 1";
+            Statement stat1 = con.createStatement();
+            ResultSet rs1 = stat1.executeQuery(strSQL1);
+            while(rs1.next()){
+                arrPaidBookingid.add(rs1.getInt("bookingid"));
             }
+            
+            while(rs.next()){
+                if(!arrPaidBookingid.contains(rs.getInt("bookingid"))){
+                    arrTenKH.add(rs.getString("customername"));
+                }
+            }
+            if(arrTenKH.isEmpty()){
+                JOptionPane.showMessageDialog(null, "Không có thông tin khách hàng đặt phòng này", "Thông báo", JOptionPane.INFORMATION_MESSAGE);
+            }
+            
             cbbTenKH.setModel(new DefaultComboBoxModel<String>(arrTenKH.toArray(new String[0])));
         }catch(Exception e){
             e.printStackTrace();
+            
         }
     }//GEN-LAST:event_txtSoPhongActionPerformed
 
@@ -535,42 +553,46 @@ public class DatDichVuUI extends javax.swing.JFrame {
 
     private void btnXacNhanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnXacNhanActionPerformed
         // TODO add your handling code here:
-        try{
-            for(int i=0; i<tblCTDV.getRowCount();i++){
-                Connection con = new DBUtils().createConn();
-                String strSQL = "select serviceID, bookingid, customer.customerid from service, booking, customer"
-                        + " where servicename = '"+tblCTDV.getValueAt(i, 0)+"'"
-                        + " and customername = '"+cbbTenKH.getSelectedItem().toString()+"'"
-                        + " and roomid = "+txtSoPhong.getText()
-                        + " and booking.customerid = customer.customerid";
-                Statement stat = con.createStatement();
-                ResultSet rs = stat.executeQuery(strSQL);
-                
-                
-                
-                ServiceBillDTO serviceBill = new ServiceBillDTO();
-                if(rs.next()){
-                    serviceBill.setServiceBillID(layServiceBillID());
-                    serviceBill.setBookingID(rs.getInt("bookingid"));
-                    serviceBill.setStaffID(layStaffID());
-                    serviceBill.setServiceID(rs.getInt("serviceid"));
+        if(tblModelCTDV.getRowCount()==0){
+            JOptionPane.showMessageDialog(null, "Vui lòng thêm dịch vụ");
+        }else{
+            try{
+                for(int i=0; i<tblCTDV.getRowCount();i++){
+                    Connection con = new DBUtils().createConn();
+                    String strSQL = "select serviceID, bookingid, customer.customerid from service, booking, customer"
+                            + " where servicename = '"+tblCTDV.getValueAt(i, 0)+"'"
+                            + " and customername = '"+cbbTenKH.getSelectedItem().toString()+"'"
+                            + " and roomid = "+txtSoPhong.getText()
+                            + " and booking.customerid = customer.customerid";
+                    Statement stat = con.createStatement();
+                    ResultSet rs = stat.executeQuery(strSQL);
+
+
+
+                    ServiceBillDTO serviceBill = new ServiceBillDTO();
+                    if(rs.next()){
+                        serviceBill.setServiceBillID(layServiceBillID());
+                        serviceBill.setBookingID(rs.getInt("bookingid"));
+                        serviceBill.setStaffID(layStaffID());
+                        serviceBill.setServiceID(rs.getInt("serviceid"));
+                    }
+                    java.util.Date utilDate = new java.util.Date(dateNgayDat.getDate().getTime());
+                    java.sql.Date sqlDate = new java.sql.Date(utilDate.getTime());
+                    serviceBill.setServiceDate(sqlDate);
+                    serviceBill.setQuantity(Integer.parseInt(tblCTDV.getValueAt(i, 1).toString()));
+                    ServiceBillBLL serviceBillBll = new ServiceBillBLL();
+                    int result = serviceBillBll.insertServiceBill(serviceBill);
+                    if(result==0){
+                        JOptionPane.showMessageDialog(null, "Đặt dịch vụ không thành công", "Thông báo", JOptionPane.INFORMATION_MESSAGE);
+                        break;
+                    }
                 }
-                java.util.Date utilDate = new java.util.Date(dateNgayDat.getDate().getTime());
-                java.sql.Date sqlDate = new java.sql.Date(utilDate.getTime());
-                serviceBill.setServiceDate(sqlDate);
-                serviceBill.setQuantity(Integer.parseInt(tblCTDV.getValueAt(i, 1).toString()));
-                ServiceBillBLL serviceBillBll = new ServiceBillBLL();
-                int result = serviceBillBll.insertServiceBill(serviceBill);
-                if(result==0){
-                    JOptionPane.showMessageDialog(null, "Đặt dịch vụ không thành công", "Thông báo", JOptionPane.INFORMATION_MESSAGE);
-                    break;
-                }
+                JOptionPane.showMessageDialog(null, "Đặt dịch vụ thành công", "Thông báo", JOptionPane.INFORMATION_MESSAGE);
+            }catch(Exception e){
+                e.printStackTrace();
             }
-            JOptionPane.showMessageDialog(null, "Đặt dịch vụ thành công", "Thông báo", JOptionPane.INFORMATION_MESSAGE);
-        }catch(Exception e){
-            e.printStackTrace();
+            this.setVisible(false);
         }
-        this.setVisible(false);
     }//GEN-LAST:event_btnXacNhanActionPerformed
 
     /**

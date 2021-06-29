@@ -23,6 +23,7 @@ public class DatPhongUI extends javax.swing.JFrame {
      */
     public DatPhongUI() {
         initComponents();
+        dateNgayNhanPhong.setDate(new java.util.Date());
         loadCbbDangThue();
     }
 
@@ -194,6 +195,8 @@ public class DatPhongUI extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setText("Thông tin phòng");
         paneDatPhong.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(98, 28, -1, -1));
+
+        dateNgayNhanPhong.setEnabled(false);
         paneDatPhong.add(dateNgayNhanPhong, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 164, 197, 30));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -345,10 +348,10 @@ public class DatPhongUI extends javax.swing.JFrame {
                     booking.setBookingID(layBookingID());
                     booking.setCustomerID(Integer.parseInt(txtCMND.getText()));
                     booking.setRoomID(Integer.parseInt(cbbSoPhong.getSelectedItem().toString()));
-                    java.util.Date utilDate = dateNgayDi.getDate();
+                    java.util.Date utilDate = dateNgayNhanPhong.getDate();
                     java.sql.Date sqlDate = new java.sql.Date(utilDate.getTime());
                     booking.setStartDate(sqlDate);
-                    utilDate = dateNgayNhanPhong.getDate();
+                    utilDate = dateNgayDi.getDate();
                     sqlDate = new java.sql.Date(utilDate.getTime());
                     booking.setEndDate(sqlDate);
                     booking.setSlot(Integer.parseInt(txtSLGiuong.getText()));

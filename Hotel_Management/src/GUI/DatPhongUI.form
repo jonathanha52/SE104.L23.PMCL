@@ -155,6 +155,9 @@
               </Constraints>
             </Component>
             <Component class="com.toedter.calendar.JDateChooser" name="dateNgayNhanPhong">
+              <Properties>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="460" y="164" width="197" height="30"/>

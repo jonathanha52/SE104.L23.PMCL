@@ -92,28 +92,25 @@ public class BookingDAL {
         }
         return result;
     }
-    public int deleteBooking(BookingDTO booking){
-        int result = 0;
-        String sqlDelete = "delete from booking where bookingid =?";
+    public int saveBooking(BookingDTO booking){
+        int result1 = 0;
+        int result2 = 0;
         try{
             dbu = new DBUtils();
             conn = dbu.createConn();
-            pres = conn.prepareStatement(sqlDelete);
-            pres.setInt(1, booking.getBookingID());
-            result = pres.executeUpdate();
             String sqlUpdate1 = "update roominformation set slotremaining = slotremaining+?,"
                     + " roomisfull = 0"
                     + " where roomid =? and roomtypename = 'Ở ghép'";
             pres = conn.prepareStatement(sqlUpdate1);
             pres.setInt(1, booking.getSlot());
             pres.setInt(2, booking.getRoomID());
-            pres.executeUpdate();
+            result1 = pres.executeUpdate();
             
             String sqlUpdate2 = "update roominformation set roomisfull = 0"
                     + " where roomid =? and roomtypename = 'Nguyên phòng'";
             pres = conn.prepareStatement(sqlUpdate2);
             pres.setInt(1, booking.getRoomID());
-            pres.executeUpdate();
+            result2 = pres.executeUpdate();
         }catch(Exception e){
             e.printStackTrace();
         }
@@ -125,6 +122,10 @@ public class BookingDAL {
                 e.printStackTrace();
             }
         }
-        return result;
+        if(result1>result2){
+            return result1;
+        }
+        else
+            return result2;
     }
 }
