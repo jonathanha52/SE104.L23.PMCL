@@ -39,8 +39,10 @@ public class TraPhongUI extends javax.swing.JFrame {
     
     ArrayList<String> arrPhuongThucTT = new ArrayList<String>();
     public void loadPhuongThucTT(){
-        arrPhuongThucTT.add("Tiền mặt");
-        arrPhuongThucTT.add("Thẻ ATM");
+        arrPhuongThucTT.add("Thanh toán cá nhân");
+        arrPhuongThucTT.add("Thanh toán như chuyến công tác");
+        arrPhuongThucTT.add("Thanh toán như 1 nhóm khách du lịch");
+        arrPhuongThucTT.add("Trả sau (Chỉ cho khách quen)");
         cbbPhuongThucTT.setModel(new DefaultComboBoxModel<String>(arrPhuongThucTT.toArray(new String[0])));
     }
     
