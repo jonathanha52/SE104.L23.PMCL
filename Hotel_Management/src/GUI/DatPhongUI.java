@@ -231,7 +231,7 @@ public class DatPhongUI extends javax.swing.JFrame {
         jLabel7.setText("Tên khách hàng");
         paneDatPhong.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(361, 68, -1, 30));
 
-        jLabel4.setText("Số lượng giường");
+        jLabel4.setText("Số lượng người");
         paneDatPhong.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 124, -1, -1));
 
         jLabel8.setText("Ngày nhận phòng");
@@ -475,7 +475,7 @@ public class DatPhongUI extends javax.swing.JFrame {
     private void btnThoatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThoatActionPerformed
         // TODO add your handling code here:
         if(!this.ckbDatCoc.isSelected()){
-            int ret = JOptionPane.showConfirmDialog(null, "Chưa đặt cọc, xác nhận thoát?", "Thông báo", JOptionPane.YES_NO_OPTION);
+            int ret = JOptionPane.showConfirmDialog(null, "Xác nhận thoát?", "Thông báo", JOptionPane.YES_NO_OPTION);
             if(ret == JOptionPane.YES_OPTION){
                 this.setVisible(false);
             }
