@@ -3,7 +3,7 @@ use se104;
 
 create table RoomInformation (
 RoomID int not null,
-RoomTypeName char(20) not null,
+RoomTypeName varchar(20) not null,
 RoomSlot int not null,
 RoomIsFull boolean not null,
 PricePerSlot double not null,
@@ -23,12 +23,12 @@ Primary Key (BookingID)
 );
 create table Customer (
 CustomerID int not null,
-CustomerName char(50) not null,
+CustomerName varchar(50) not null,
 Primary Key (CustomerID)
 );
 create table Staff (
 StaffID int not null auto_increment,
-StaffName char(50) not null,
+StaffName varchar(50) not null,
 Primary Key (StaffID)
 );
 create table ServiceBill (
