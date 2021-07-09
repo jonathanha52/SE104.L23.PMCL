@@ -65,7 +65,7 @@ Primary Key (DepositID)
 create table Payment(
 PaymentID int not null,
 BookingID int not null,
-PaymentTypeName varchar(20) not null,
+PaymentTypeName varchar(50) not null,
 PayDate date not null,
 PaymentStatus boolean not null,
 Amount double not null,
