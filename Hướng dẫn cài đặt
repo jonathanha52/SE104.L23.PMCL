@@ -1,0 +1,9 @@
+1. Database
+- Cài đặt MySQL trên máy.
+- Sau khi cài MySQL thành công, mở file trong folder database bằng MySQL Workbench.
+- Kết nối với database thông qua Workbench và chạy code database.
+2. Netbeans
+- Cài Netbeans để chạy phần mềm (có thể xài các IDE khác hỗ trợ Java)
+- Mở Netbeans->Open project->Hotel management.
+- Run QLChiTieuUI.java
+* Lưu ý: Nếu Netbeans báo lỗi thiếu thư viện, các bạn chọn vào Resolve problem. Tương ứng với các lỗi hiện ra, bạn chọn các thư viện bằng file jar có sẵn trong folder HotelManagement/jar_files.
